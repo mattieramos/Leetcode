@@ -1,0 +1,9 @@
+#PSEUDO
+##create a for loop that iterates through the array, starting at 1 and ending at the length of the array (nums)
+##set the array (nums[i]) to nums[i] is equal to nums[i] + nums[i-1] (nums[i] is the previous number
+
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        for i in range(1, len(nums)):
+            nums[i] += nums[i-1]
+        return nums
